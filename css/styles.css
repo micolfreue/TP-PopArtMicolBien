@@ -4,52 +4,704 @@
        src: url('../fonts/Gagalin-Regular.otf') format('opentype'); font-weight: normal; font-style: normal;
 }
 @font-face {
-       font-family:'cloudsoft' ;
-       src: url('../fonts/CloudSoft-Light\ 300.otf')format('opentype');
+       font-family:cloudsoft ;
+       src: url('../fonts/CloudSoft-Light\ 300.otf') format('opentype');
        font-weight: 300;
 }
 @font-face {
-       font-family:'cloudsoft' ;
-       src: url('../fonts/CloudSoft-Bold\ 700.otf')format('opentype');
+       font-family:cloudsoft ;
+       src: url('../fonts/CloudSoft-Bold\ 700.otf') format('opentype');
        font-weight: 700;
 }
+body{
+       font-family: gagalin;
+}
+
+
+
 header{background-color: #FA6A9B;
        padding: 5px 10px; 
        display: flex;
-}
-.navbar ul{
-       display: flex;
-       height: 180px;
        align-items: center;
-}
-.navbar ul li{
-       background-image: url('../img/navbar.png');
-       background-repeat: no-repeat;
-       width: 195px ;
-
+       justify-content: space-between;
 }
 header a{
-       font-family: "cloudsoft"; font-weight: 700; color: #DA2834; text-decoration: none;
+       font-family: "cloudsoft"; 
+       font-weight: 700; 
+       color: #FFFFFF;
+       text-decoration: none;
 }
+
+.topnav{display: flex;
+       align-items: center;
+       flex: 1;
+       justify-content: space-around;       
+}
+.icon {display: none;}
+
+.navbar ul{
+       display: flex;
+       gap:10px;
+       flex-wrap: wrap;
+}
+.navbar ul li{
+       background-image: url('../img/navbar2-1.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   border: none;
+   width: 129px;
+   min-height: 95px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding-top: 12px;
+   padding-left: 7px;
+   }
+
+.navbar a {
+       font-size: 16px;
+       color: #DA2834;
+   }
+
+
 .iconosderecha{
        display: flex;
+       gap:10px;
+       padding-top: 15px;
 }
 .iconosderecha div{ 
        display: flex;
        flex-direction: column;
        text-align: center;
 }
+.iconosderecha a{
+       color: #DA2834;
+}
+
+
+.navbar ul li a:hover{
+       color: #FA6A9B;
+   }
+   .iconosderecha a:hover{
+       color: #2C6F9C;
+   }
+
 .presentacionpopart
 {
        background-image: url('../img/fondoazul.png');
        background-repeat: no-repeat;
        background-size: cover;
        min-height: 755px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       padding: 2em;
 
+}
+.presentacionpopart p{
+       background-color: #FA6A9B;
+       color:white;
+       padding: 35px 20px;
+       margin-top:80px;
+       line-height: 1.5;
+       font-size: 35px;
 }
 .brillosytexto{
        display: flex;
+       align-items: center;
+    justify-content: space-around;
+    text-align: center;
 }
 h1{
-       font-family: gagalin; font-size: 150px; color: #FFFFFF; text-shadow:-18px 0px #FA6A9B;
+       font-family: gagalin; color: #FFFFFF; text-shadow:-18px 0px #FA6A9B;
+       font-weight: normal;
+       font-size:130px;
+}
+.fondolatas{
+       height:95px;
+       background-image: url("../img/lata.png");
+       background-repeat: repeat-x;
+       margin-top:10px;
+       background-color: white;
+}
+.introduccion{
+       background-image: url("../img/fondorosa.png");
+       background-repeat: no-repeat;
+       background-size: cover;
+       padding: 2em;
+}
+
+.iconosycomic{
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       gap: 10px;
+}
+
+       .iconosycomic>img{
+              width: 120px;
+       }
+
+       .iconosycomic div{
+              background-color: #DA2834;
+              color: white;
+              font-family: cloudsoft;
+              padding: 10px;
+              
+       }
+
+       .ruloimg{
+              margin-bottom: 50px;
+              align-self: end;
+       }
+
+.textointro{
+       background-color: #2C6F9C;
+       color:white;
+       padding: 15px 20px;
+       margin-top:35px;
+       font-size: 35px;
+       line-height: 1.5;
+}
+
+.cuadradosamarillos{
+       height:85px;
+       background-image: url("../img/cuadradosamarillos.png");
+       background-repeat: repeat-x;
+}
+
+.caracteristicas{
+       background-color: #ffdb19;
+       padding: 20px;
+}
+
+.cuadrorojo img{
+       width: 100%;
+}
+       .caracteristicas h2{
+              background-color: #2C6F9C;
+              color: white;
+              font-weight: normal;
+              font-size: 45px;
+              text-align: center;
+              padding: 20px;
+              margin: 35px;
+              margin-bottom: 80px;
+       }
+       .caracteristicas h3{
+              color:#DA2834;
+              text-shadow:-5px 0px #FFFFFF;
+              font-weight: normal;
+              font-size: 55px;
+              margin-bottom: 15px;
+       }
+       .movtitfuera{
+              margin: 35px; 
+       }
+       .movimiento{
+              display: flex;
+              align-items: center;
+              margin: 35px;
+              gap: 30px;
+       }
+       .collages,.esculturas{
+              gap:30px;
+       }
+       .collages img{
+              object-fit: cover;
+              height: 350px;
+
+       }
+       .esculturas img{
+              object-fit: cover;
+              height: 418px;
+
+       }
+
+       .cuadrorojo{
+              background-color: #DA2834;
+              padding: 10px 10px 0 10px;
+              width: 80%;
+       }
+       .cuadrorojo p{
+              font-family:cloudsoft ;
+              font-weight: 700;
+              color:#FFFFFF;
+       }
+
+       .contenidoexclusivo{
+              background-color: #2C6F9C;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 30px;
+              flex-wrap:wrap;
+              gap: 10px;
+       }
+       .textoexclusivo{
+              flex:1 0;
+       }
+       .artistas{
+              width: 100%;
+              max-width: 750px;
+       }
+
+       .textoexclusivo h3{
+              background-color: #DA2834;
+              font-weight: normal;
+              color:#FFFFFF;
+              font-size: 30px;
+              padding: 15px;
+              margin-bottom: 30px;
+       }
+       .enlaceexclusivo{
+              display: flex;
+              align-items: center;
+              gap: 40px;
+              margin-bottom: 30px;
+       }
+       .enlaceexclusivo img{
+              width: 70px;
+       }
+       .enlaceexclusivo a{
+              background-color:#FA6A9B;
+              color:white;
+              font-family:cloudsoft ;
+              font-weight: 700;
+              padding: 15px 40px;
+              text-transform: uppercase;
+              text-decoration: none;
+       }
+
+       footer{
+              background-image: url("../img/footer.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+              height: 165px;
+              display: flex;
+              align-items: center;
+              padding: 25px;
+       }
+       footer>div{
+              flex: 1;
+       }
+       .textofooter{
+              background-color: white;
+              padding: 10px 20px;
+              text-align: center;
+              flex: 1 1 350px;
+       }
+              .textofooter h4{
+                     color:#DA2834;
+                     font-weight: normal;
+                     font-size: 26px;
+                     margin-bottom: 10px;
+              }
+              .textofooter p{
+                     font-family:cloudsoft;
+              }
+       .redes{
+              text-align: right;
+       }
+       .redes img{
+              width: 50px;
+              margin-left: 15px;
+       }
+
+/* ARTISTAS */
+
+.presentacionartistas
+{
+       background-image: url('../img/fondoazul.png');
+       background-repeat: no-repeat;
+       background-size: cover;
+       min-height: 755px;
+       padding: 50px;
+       padding-bottom: 120px;
+
+}
+.presentacionartistas h2{
+       font-family: gagalin; color: #FFFFFF; 
+       text-shadow:-12px 0px #FA6A9B;
+       font-weight: normal;
+       font-size:80px;
+       margin-bottom: 60px;
+}
+
+.contenedorartistas{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap:25px;
+       flex-wrap: wrap;
+}
+       .artistaimg{
+              background-color: white;
+              padding: 20px 10px 50px 10px;
+              text-align: center;
+              box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+       }
+
+
+       .artistaimg h3{
+              font-weight: normal;
+              font-size: 23px;
+              margin-top: 20px;
+       }
+
+       .artistaimg img{
+              width: 100%;
+              height: 286px;
+              object-fit: cover;
+       }
+
+       .artista{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 30px;
+              flex: 1 1 250px;
+       }
+
+       .artista a{
+              background-color:#FA6A9B;
+              color:white;
+              font-family:cloudsoft ;
+              font-weight: 700;
+              padding: 15px 40px;
+              text-transform: uppercase;
+              text-decoration: none;
+       }
+
+       .artista a:hover, .enlaceexclusivo a:hover{
+              background-color: #DA2834;
+       }
+
+/* ARTISTA */
+.presentacionartista{
+       min-height: 755px;
+       padding: 50px;
+       padding-bottom: 120px;
+       background-color: #ffdb19;
+}
+
+       .presentacionartista h2, .presentacionartista h3, .presentacionquees h2, .presentacionquees h3{
+              font-family: gagalin; 
+              color: #FFFFFF; 
+              text-shadow:-12px 0px #DA2834;
+              font-weight: normal;
+              font-size:80px;
+              margin-bottom: 40px;
+       }
+
+       .imgprincipalartista{
+              display: block;
+              width: 80%;
+              margin:35px auto;
+       }
+
+       .presentacionartista h3{
+              font-size: 70px;
+       }
+       .presentacionartista h4{
+              color: #FFFFFF;
+              background-color: #2C6F9C;
+              padding: 15px;
+              font-family:cloudsoft ;
+              font-weight: 700;
+              font-size: 25px;
+              
+       }
+       .contenedorimgartista{
+              background-color: #2C6F9C;
+              padding: 10px;
+              padding-bottom: 0;
+              margin: 80px;
+              margin-top: 0;
+       }
+       .imagenesartistas{
+              display: flex;
+              justify-content: center;
+              gap: 100px;
+       }
+
+       .imagenesartistas img{
+              min-width: 224px;
+              max-width: 480px;
+              object-fit: cover;
+       }
+
+       .contenedorimgartista p{
+              font-family:cloudsoft ;
+              font-weight: 700;
+              padding: 5px;
+              font-size:20px;
+              color:#FFFFFF;
+       }
+
+/* Obras */
+
+.contenedorobras, .contenedorsobre{
+       background-color: #DA2834;
+       padding: 10px;
+       display: grid;
+       gap: 10px;
+}
+
+.contenedorobras img{
+       max-width: 254px;
+       margin: 35px;
+       grid-template-columns: repeat(4, 1fr);
+       width: 100%;
+       margin: auto;
+}
+
+/* Sobre Mí */
+.contenedorsobre{
+       grid-template-columns: 1fr 1fr;
+       padding: 30px;
+       gap: 20px;
+}
+       .contenedorsobre>div{
+              background-color: #FA6A9B;
+              padding: 15px;
+       }
+       .contenedorsobre p{
+              color:#FFFFFF;
+              font-family:cloudsoft ;
+              font-weight: 700;
+              font-size: 26px;
+       }
+
+       .contenedorsobre img{
+              width: 100%;
+              max-width: 450px;
+              margin: auto;
+              display: block;
+       }
+
+/* ¿Que es? */
+
+.presentacionquees{
+       min-height: 755px;
+       padding: 50px;
+       padding-bottom: 120px;
+       background-image: url("../img/fondorosa.png");
+       background-repeat: no-repeat;
+       background-size: cover;
+}
+
+.contenedorarribaque{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 100px;
+       margin-bottom: 20px;
+}
+
+.contenedorarribaque p{
+       color:#FFFFFF;
+       font-family:cloudsoft ;
+       font-weight: 700;
+       font-size: 25px;
+       background-color: #2C6F9C;
+       padding: 20px;
+       max-width: 500px;
+    width: 100%;
+    line-height: 1.75;
+}
+
+.contenedorarribaque img{
+       max-width: 390px;
+       border: 12px solid #2C6F9C;
+       width: 100%;
+}
+
+.imgprincipalque{
+       border:5px solid #2C6F9C;
+       display: block;
+       width: 80%;
+       margin: auto;
+
+}
+.pquees{
+       color:#FFFFFF;
+       font-family:cloudsoft ;
+       font-weight: 700;
+       font-size: 25px;
+       background-color: #2C6F9C; 
+       padding: 20px;
+       margin-top: 35px;
+}
+
+/* Contacto */
+.contenedorcontacto{
+       display: flex;
+       gap: 20px;
+}
+
+.contenedorcontacto img{
+       border:5px solid #2C6F9C;
+       width: 100%;
+}
+
+.contenedorcontacto .formulario{
+       display: flex;
+       flex-direction: column;
+       flex: 1 0 400px;
+       gap: 35px;
+}
+
+.contenedorcontacto input{
+       background-color: #FA6A9B;
+       border: none;
+       outline: none;
+       color: #FFFFFF;
+       font-family:cloudsoft ;
+       font-weight: 700;
+       font-size: 20px;
+       width: 100%;
+       padding: 30px 20px;
+}
+
+.contenedorcontacto input::placeholder{
+       color: #FFFFFF;
+}
+
+.contenedorcontacto button{
+       background-color: #DA2834;
+       border: none;
+       outline: none;
+       cursor: pointer;
+       color: white;
+       font-family:cloudsoft ;
+       font-weight: 700;
+       padding: 15px 50px;
+       align-self: center;
+}
+
+.contenedorcontacto button:hover{
+       background-color: #2C6F9C;
+}
+
+.contenedorgaleria{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background: #DA2834;
+       padding: 30px;
+}
+
+.contenedorgaleria div{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       gap: 13px;
+}
+
+@media screen and (max-width:791px){
+       .movimiento{
+              flex-direction: column;
+       }
+       .cuadrorojo{
+              margin:auto;
+       }
+       .caracteristicas h3{
+              text-align: center;
+       }
+       .textointro{
+              font-size: 20px;
+       }
+       .presentacionpopart p {
+       font-size: 24px;
+       }
+       h1{
+              font-size:100px;
+       }
+       .imagenesartistas{
+              flex-direction: column;
+       }
+       .imagenesartistas img{
+              width: 100%;
+       }
+
+              .contenedorimgartista{
+                     margin: auto;
+                     margin-bottom: 20px;
+              }
+              .contenedorimgartista p {
+                     font-size: 14px;
+              }
+              .presentacionartista h4{
+                     font-size: 20px;
+              }
+              .presentacionartista h2{
+                     font-size: 60px;
+              }
+
+              .imgprincipalartista{
+                     width: 100%;
+              }
+              .contenedorobras{
+                     grid-template-columns: 1fr 1fr;
+                     margin:0;
+              }
+              .contenedorsobre{
+                     grid-template-columns: 1fr;
+              }
+              .contenedorsobre p{
+                     font-size: 18px;
+              }
+
+              .contenedorarribaque{
+                     flex-direction: column;
+              }
+              .imgprincipalque{
+                     width: 100%;
+              }
+              .contenedorcontacto{
+                     flex-direction: column-reverse;
+              }
+              .brillosytexto{
+                     flex-direction: column;
+              }
+              .iconosycomic{
+                     flex-direction: column;
+              }
+              .ruloimg {
+                     align-self: center;
+              }
+       header{
+           position:relative
+       }
+       .topnav{display: none;}
+       .icon {display: block;}
+       .responsive{
+              position: absolute;
+              flex-direction: column;
+              bottom: -643px;
+              background-color: #DA2834;
+              width: 100%;
+              left: 0;
+              padding: 15px;
+              display: block;
+       }
+       .responsive ul{
+              flex-direction: column;
+          }
+          .responsive .navbar ul li{
+              background: none;
+              border-bottom:1px solid #FA6A9B;
+              width: 100%;
+              text-align: left;
+              justify-content: left;
+          }
+          .responsive .navbar ul li a, .responsive .iconosderecha a{
+              color: #FFFFFF;
+          }
+          .responsive .navbar ul li a:hover, .responsive .iconosderecha a:hover{
+              color:#ffdb19;
+          }
 }

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop Art</title>
+
+    <!-- ICONOS DE FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/styles.css">
 
 
@@ -13,31 +17,38 @@
 <body>
 <header> 
     <div class="logo"> 
- <img src="img/logopopartt.png">
+        <a href="index.html">
+            <img src="img/logopopartt.png">
+        </a>
     </div>
-    <nav class="navbar"> 
-        <ul>
-            <li><a href="">Artistas</a></li>
-            <li><a href="">Obras Destacadas</a></li>
-            <li><a href="">Sobre mí</a></li>
-            <li><a href="">¿Qué es?</a></li>
-            <li><a href="">Contacto</a></li>
-        </ul>
-    </nav>
-    <div class="iconosderecha">
-        <div> 
-            <img src="img/perfil2.png">
-            <a href=""> 
-            Perfil
-            </a>
-        </div>
-        <div> 
-            <img src="img/buscar2.png">
-            <a href=""> 
-            Buscar
-            </a>
+    <div class="topnav" id="topnav">
+        <nav class="navbar"> 
+            <ul>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="sobremi.html">Sobre mí</a></li>
+                <li><a href="quees.html">¿Qué es?</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="iconosderecha">
+            <div> 
+                <img src="img/perfil2-1.png">
+                <a href=""> 
+                    Perfil
+                </a>
+            </div>
+            <div> 
+                <img src="img/buscar2-1.png">
+                <a href=""> 
+                    Buscar
+                </a>
+            </div>
         </div>
     </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
 </header>
 <main> 
     <div class="presentacionpopart">
@@ -48,13 +59,13 @@
 </div>
 <p>Conocé este movimiento de arte tan particular, que rompió con los estándares de arte en su época y la conforman artistas de primera que se arriesgaron con sus obras y fueron transgresores.</p>
     </div>
-    <div class="fondolatas">
 
-    </div>
+    <div class="fondolatas"></div>
+    
     <div class="introduccion"> 
  <div class="iconosycomic"> 
-        <img src="img/rulo.png">
-<div> 
+        <img src="img/rulo.png" class="ruloimg">
+<div class="cuadrorojo"> 
     <img src="img/collage0.png">
     <p> Collage Pop Art - Andy Warhol </p>
 
@@ -64,103 +75,108 @@
 </div>
 <p class="textointro"> Esta vanguardia de arte moderno surge en Gran Bretaña, en 1950 y se caracteriza por la estética de la vida y el consumo de la época. Se inspira en cómics, ilustraciones y la creación de collages con objetos descontextualizados. Además, se destacó por esculturas llamativas y arquitectura tanto colorida como alocada inspirada en este movimiento artístico.</p>
     </div>
-    <div class="cuadradosamarillos">
 
-    </div>
+    <div class="cuadradosamarillos"></div>
+    
     <div class="caracteristicas"> 
         <h2> Características del Movimiento</h2>
-        <div class="comics"> 
+        <div class="movimiento"> 
             <div> 
                 <h3>Comics</h3>
-                <div>
+                <div class="cuadrorojo">
                      <img src="img/comics1.jpg"> 
                 <p>Exposición de Arte - Roy Lichtenstein</p>
                 </div>
                
             </div>
-            <div>
+            <div class="cuadrorojo">
                 <img src="img/comics2.jpeg">
                 <p>Roy Lichtenstein</p>
             </div>
             
         </div>
-        <div class="ilustraciones"> 
+        <div class="movimiento"> 
             <div> 
                 <h3>Ilustraciones</h3>
-                <div> 
+                <div class="cuadrorojo"> 
                     <img src="img/ilustraciones.jpeg">
                     <p>Andy Warhol</p>
                 </div>
                
             </div>
-            <div>
+            <div class="cuadrorojo">
                 <img src="img/ilustraciones2.jpeg">
                 <p>Exposición de Arte - Andy Warhol</p>
             </div>
             
         </div>
-        <div class="collages"> 
-            <div> 
-                <h3>Collages</h3>
-                <div> 
-                    <img src="img/collages1.png">
-                    <p>Robert Rauschenberg</p>
-                </div>
-                
+        <h3 class="movtitfuera">Collages</h3>
+        <div class="movimiento collages"> 
+            <div  class="cuadrorojo"> 
+                <img src="img/collages1.png">
+                <p>Robert Rauschenberg</p>
             </div>
-            <div> 
+            <div class="cuadrorojo"> 
                 <img src="img/collages2.jpeg">
                 <p>Exposición de Arte - Robert Rauschenberg</p>
             </div>
            
         </div>
-    <h3> Esculturas y Arquitectura Llamativa </h3>
-    <div class="esculturas"> 
-        <div> 
+    <h3 class="movtitfuera"> Esculturas y Arquitectura Llamativa </h3>
+    <div class="movimiento esculturas"> 
+        <div class="cuadrorojo"> 
              <img src="img/arquitectura1.jpeg">
              <p>Keith Haring</p>
         </div>
-      <div>
+      <div class="cuadrorojo">
         <img src="img/arquitectura2.jpeg">
         <p>Exposición de Arte - Keith Haring</p>
     </div>
         
     </div>
 </div>
-<div class="cuadradosamarillos">
 
-</div>
+<div class="cuadradosamarillos"></div>
+
 <div class="contenidoexclusivo">
     <div class="textoexclusivo">
         <h3>¿Querés conocer más contenido exclusivo acerca de sus artistas?</h3>
         <div class="enlaceexclusivo"> 
             <img src="img/brillos.png">
-            <a href=""> 
+            <a href="artistas.html"> 
                 Ver Más
             </a>
          </div>
-         <div class="royexclusivo">
+         <div class="cuadrorojo">
             <img src="img/comics2.jpeg">
             <p>Roy Lichtenstein</p>
         </div>
     </div>
     <img src="img/trueno.png"> 
-    <img src="img/parahome.jpeg">
+    <img src="img/parahome.jpeg" class="artistas">
 </div>
 </main>
 
 <footer>
-<div class="textofooter">
-    <h4>
-    ¡Cualquier consulta, Contactate con nosotros!</h4>
-<p>
-    © 2023 TCF Co. LLC. All Rights Reserved.
-</p>
-</div>
-<div class="redes">
-<a href=""><img src="img/instagram.png" alt=""></a><a href=""><img src="img/facebook.png" alt=""></a>
-</div>
+    <div></div>
+    <div class="textofooter">
+        <h4>¡Cualquier consulta, Contactate con nosotros!</h4>
+        <p> © 2023 TCF Co. LLC. All Rights Reserved.</p>
+    </div>
+    <div class="redes">
+        <a href=""><img src="img/instagram.png" alt=""></a>
+        <a href=""><img src="img/facebook.png" alt=""></a>
+    </div>
 </footer>
-
+<script type="text/javascript">
+    function myFunction() {
+    var x = document.getElementById("topnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    }
+</script>
 </body>
 </html>

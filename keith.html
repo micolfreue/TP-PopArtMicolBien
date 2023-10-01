@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Art - KEITH HARING</title>
+
+    <!-- ICONOS DE FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    
+</head>
+<body>
+<header> 
+    <div class="logo"> 
+        <a href="index.html">
+            <img src="img/logopopartt.png">
+        </a>
+    </div>
+    <div class="topnav" id="topnav">
+        <nav class="navbar"> 
+            <ul>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="sobremi.html">Sobre mí</a></li>
+                <li><a href="quees.html">¿Qué es?</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="iconosderecha">
+            <div> 
+                <img src="img/perfil2-1.png">
+                <a href=""> 
+                    Perfil
+                </a>
+            </div>
+            <div> 
+                <img src="img/buscar2-1.png">
+                <a href=""> 
+                    Buscar
+                </a>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+</header>
+<main> 
+    <div class="presentacionartista">
+        <h2 class="titartista">KEITH HARING</h2> 
+        <img src="img/artistakeith.jpg" alt="" class="imgprincipalartista">
+
+        <h3>Pop Art</h3>
+
+        <div class="contenedorimgartista">
+            <div class="imagenesartistas">
+                <img src="img/artistasharing1.jpeg" alt="">
+                <img src="img/artistasharing2.jpeg" alt="">
+            </div>
+            <p>Arte Callejero y esculturas Keith Haring</p>
+        </div>
+
+        <h4>Keith Haring, nació en 1958 en Pensilvania. Estudió arte en Pittsburgh y luego en Nueva York, donde se interesó en la semiótica. A partir de 1980, se destacó en el arte callejero y grafitis, siendo un icono de este movimiento. Conectó el arte de la calle con museos y en 1986 pintó parte del Muro de Berlín. Fue un artista y activista social, reflejando temas como nacimiento, muerte, amor, sexo y guerra en sus obras.</h4>
+
+    </div>
+
+    
+
+<footer>
+    <div></div>
+    <div class="textofooter">
+        <h4>¡Cualquier consulta, Contactate con nosotros!</h4>
+        <p> © 2023 TCF Co. LLC. All Rights Reserved.</p>
+    </div>
+    <div class="redes">
+        <a href=""><img src="img/instagram.png" alt=""></a>
+        <a href=""><img src="img/facebook.png" alt=""></a>
+    </div>
+</footer>
+<script type="text/javascript">
+    function myFunction() {
+    var x = document.getElementById("topnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    }
+</script>
+</body>
+</html>
